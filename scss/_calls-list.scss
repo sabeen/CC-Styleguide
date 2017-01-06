@@ -1,5 +1,6 @@
 .calls-list--header {
-  background: rgba($calls-color, 0.5);
+  background: desaturate(rgba($calls-color, 0.6), 10%);
+  padding-bottom: $padding-unit*2;
 
   .new-call-button {
     height: $padding-unit*2 + 2*($padding-unit/3);
@@ -7,10 +8,12 @@
     width: $padding-unit*3;
     float: left;
     padding-left: 15px;
+
     .fa-phone {
       font-size: 2.2em;
-      line-height: 1.4em;
+      line-height: 1.3em;
     }
+
     .fa-plus {
       font-size: 1.2em;
       position: relative;
@@ -21,6 +24,14 @@
 
   .toolbar {
     margin-left: $padding-unit*4;
+  }
+
+}
+
+.calls-list--list {
+  i {
+    font-size: 0.9em;
+    margin-right: $padding-unit/4;
   }
 
 }
