@@ -1,0 +1,10 @@
+.container {
+  padding: $padding-unit;
+}
+
+.section {
+  padding: $padding-unit 0 $padding-unit*2;
+  &:not(:first-child) {
+    border-top: 1px solid $light-grey;
+  }
+}

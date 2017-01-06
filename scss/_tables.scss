@@ -1,0 +1,32 @@
+.table-list {
+  width: 100%;
+  border-collapse: collapse;
+
+  td, th {
+    padding: $padding-unit/2;
+    text-align: left;
+  }
+
+  thead {
+    tr {
+      background: rgba($calls-color, 0.5);
+      color: white;
+    }
+    th {
+      padding-bottom: $padding-unit/1.5;
+    }
+
+  }
+  tbody {
+    tr {
+      background: rgba(white, 0.5);
+      border: $padding-unit/3 solid $bg-color;
+      border-left: $padding-unit/2 solid $bg-color;
+      border-right: $padding-unit/2 solid $bg-color;
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+}

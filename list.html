@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Call Center Styleguide</title>
+    <link  charset="utf-8"  media="screen"  type="text/css" href="css/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+
+
+  <body role="document">
+
+    <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <span>Call Center Styleguide</span>
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="components.html">Components</a></li>
+            <li class="active"><a href="list.html">List Layout</a></li>
+          </ul>
+        </div>
+        <div class="navbar-user">
+            <div class="dropdown">
+              <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <div class="user-icon">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+               </div>
+                Username<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+
+    <div class="container calls-list--header" role="main">
+
+      <button type="button" class="new-call-button btn">
+        <i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+
+      <div class="toolbar">
+        <div class="toolbar-search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Search..."></input>
+        </div>
+        <div class="toolbar-filters">
+
+          <div class="filter dropdown">
+            <a id="dropdownMenu10" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <div class="filter-icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <span class="value">All Places</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu10">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value A</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value B</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value C</a></li>
+            </ul>
+          </div>
+          <div class="filter dropdown">
+            <a id="dropdownMenu11" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <div class="filter-icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <span class="value">All except prank calls</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu11">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value A</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value B</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value C</a></li>
+            </ul>
+          </div>
+          <div class="filter dropdown">
+            <a id="dropdownMenu12" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <span class="value">This week</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu12">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value A</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value B</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Value C</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- /container -->
+
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/inputs.js"></script>
+
+  </body>
+
+</html>

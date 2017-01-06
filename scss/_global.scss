@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Asap;
+  font-size: $font-size;
+  color: $font-color;
+  background-color: $bg-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: $action-color;
+  &:hover, &:focus {
+    color: $action-hover;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2em;
+  padding: $padding-unit*2 0 $padding-unit;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6em;
+  padding: $padding-unit 0 $padding-unit/2;
+}
+
+h3 {
+  font-size: 1.2em;
+  padding: $padding-unit/2 0 $padding-unit/2;
+}
+h4 {
+  font-size: 1em;
+  padding: $padding-unit/2 0 $padding-unit/4;
+}
+
+p {
+  padding: $padding-unit/2 0;
+}
+
+
+
+
+
+
+
+
+
