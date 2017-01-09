@@ -27,14 +27,8 @@
 }
 
 .form-row {
-  display: flex;
+  @extend .grid-row;
   align-items: flex-end;
-  justify-content: space-between;
-  padding-bottom: $padding-unit*2;
-}
-.form-row>div {
-  flex: 1;
-  margin-right: 30px;
 }
 
 label {
@@ -71,7 +65,8 @@ label {
 }
 
 .input:hover,
-.input.active {
+.input.active,
+.input.has-error {
 
   input,
   select {
@@ -100,7 +95,6 @@ input, textarea, select {
   font-family: Asap;
   font-size: $font-size;
   line-height: 1.3em;
-
 }
 
 .form {
@@ -191,7 +185,6 @@ input[type="radio"]:checked + label {
   margin: 0;
   overflow: hidden;
   padding: 0 15px;
-
   .dropdown-toggle {
     height: 0;
     padding: 0;
@@ -207,13 +200,41 @@ input[type="radio"]:checked + label {
   .dropdown-toggle {
     color: $light-grey;
     width: 100%;
-    padding: 13px 15px 0;
+    padding: 13px 15px;
 
     .caret {
       border-top: 7px solid $action-color;
     }
   }
 }
+
+/* ERRORS */
+
+
+.has-error {
+  border-color: $danger;
+  border-width: 2px;
+  position: relative;
+  label {
+    color: $danger;
+  }
+
+  .help-block {
+    position: absolute;
+    bottom: -$padding-unit*2;
+    color: $danger;
+    height: $padding-unit*2;
+    width: 100%;
+    padding-top: 6px;
+    p {
+      font-size: 0.9em;
+      line-height: 1.2em;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
 
 
 

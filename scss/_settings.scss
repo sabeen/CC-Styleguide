@@ -1,5 +1,4 @@
 $font-color: #2B4643;
-
 $action-color: #00A777;
 $action-hover: lighten($action-color, 5%);
 
@@ -26,3 +25,9 @@ $birth: #5ACEB4;
 $open: #DE9010;
 $closed: #B7C8C6;
 $dispatched: #4990E2;
+
+
+$danger: #C74B1E;
+$warning: $sick;
+$success: $action-color;
+$info: $mid-grey;

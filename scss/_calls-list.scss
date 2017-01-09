@@ -34,4 +34,18 @@
     margin-right: $padding-unit/4;
   }
 
+  .patient {
+    a:before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid;
+      border-right: 2px solid;
+      transform: rotate(45deg);
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+  }
+
 }
