@@ -41,11 +41,46 @@
     <div class="container" role="main">
       <div class="section">
         <label class="section-label">Typography</label>
+        <h1>Font</h1>
+        <p>Asap (400), <strong>Asap bold (700)</strong>, <em>Asap italic (400i)</em></p>
         <h1>Headline H1</h1>
         <h2>Headline H2</h2>
         <h3>Headline H3</h3>
         <h4>Headline H4</h4>
-    </div>
+        <p>This is a paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ligula lacinia commodo sagittis. Fusce luctus nisi ut lectus suscipit iaculis. Duis fringilla justo quis nibh hendrerit sodales. Nulla ac libero elit. Phasellus tristique placerat lacus, sit amet lacinia magna finibus vitae. Suspendisse non nunc vel nibh lobortis semper quis vel purus. Cras dui ipsum, auctor laoreet mi nec, posuere aliquam leo. Duis eros nibh, tempor id viverra at, volutpat id elit. </p>
+        <label>This is a label</label>
+        <a href="#">This is a textlink</a>
+      </div>
+      <div class="section">
+        <label class="section-label">Colors</label>
+        <h1>Basic</h1>
+        <div class="grid-row">
+          <div class="container font-color">Font</div>
+          <div class="container action-color">Action</div>
+          <div class="container action-hover">Action hover</div>
+          <div class="container bg-color">Background</div>
+          <div class="container input-color">Input fields</div>
+        </div>
+        <div class="grid-row">
+          <div class="container dark-grey">Dark grey</div>
+          <div class="container grey">Grey</div>
+          <div class="container mid-grey">Mid grey</div>
+          <div class="container light-grey">Light grey</div>
+        </div>
+        <h1>Contextual</h1>
+        <div class="grid-row">
+          <div class="container calls-color">Calls</div>
+          <div class="container patients-color">Patients</div>
+        </div>
+        <h1>Alerts</h1>
+        <div class="grid-row">
+          <div class="container danger">Danger</div>
+          <div class="container warning">Warning</div>
+          <div class="container success">Success</div>
+          <div class="container info">Info</div>
+        </div>
+
+      </div>
 
 
     <div class="section">
@@ -484,106 +519,120 @@
 
     <div class="section">
       <label class="section-label">Grids</label>
+      <h1>Container</h1>
+      <div class="container mid-grey">
+        <h2>Container</h2>
+        <p>(has padding)</p>
+        <div class="section">
+          <h4>Section</h4>
+          <p>(has padding top and bottom, top border)</p>
+        </div>
+        <div class="section">
+          <h4>Section</h4>
+          <div class="container grid-row">
+            <div class="alert">div</div>
+            <div class="alert">div</div>
+            <div class="alert">div</div>
+          </div>
+        </div>
+      </div>
 
-      <h1>Flex box</h1>
+      <h1>Flex box: <em>.grid-row</em></h1>
       <div class="grid-row">
-        <div class="alert">2 divs</div>
-        <div class="alert">2 divs</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row">
-        <div class="alert">3 divs</div>
-        <div class="alert">3 divs</div>
-        <div class="alert">3 divs</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row">
-        <div class="alert">5 divs</div>
-        <div class="alert">5 divs</div>
-        <div class="alert">5 divs</div>
-        <div class="alert">5 divs</div>
-        <div class="alert">5 divs</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
 
-      <h1>2 columns grid</h1>
+      <h1>2 columns grid: <em>.grid-row .grid2</em></h1>
       <div class="grid-row">
-        <div class="alert"></div>
-        <div class="alert"></div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid2">
-        <div class="alert empty-col1-left"></div>
+        <div class="alert empty-col1-left">empty-col1-left</div>
       </div>
       <div class="grid-row grid2">
-        <div class="alert empty-col1-right"></div>
+        <div class="alert empty-col1-right">empty-col1-right</div>
       </div>
 
-      <h1>3 columns grid</h1>
+      <h1>3 columns grid <em>.grid-row .grid3</em></h1>
       <div class="grid-row">
-        <div class="alert"></div>
-        <div class="alert"></div>
-        <div class="alert"></div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid3">
-        <div class="alert col2"></div>
-        <div class="alert"></div>
+        <div class="alert col2">col2</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid3">
-        <div class="alert empty-col1-right"></div>
-        <div class="alert"></div>
+        <div class="alert empty-col1-right">empty-col1-right</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid3">
-        <div class="alert empty-col2-left"></div>
+        <div class="alert empty-col2-right">empty-col2-right</div>
       </div>
       <div class="grid-row grid3">
-        <div class="alert"></div>
-        <div class="alert empty-col1-right"></div>
+        <div class="alert empty-col2-left">empty-col2-left</div>
       </div>
       <div class="grid-row grid3">
-        <div class="alert empty-col2-right"></div>
+        <div class="alert empty-col1-left">empty-col1-left</div>
+        <div class="alert">div</div>
       </div>
 
-      <h1>4 columns grid</h1>
+
+      <h1>4 columns grid <em>.grid-row .grid4</em></h1>
       <div class="grid-row">
-        <div class="alert"></div>
-        <div class="alert"></div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row">
-        <div class="alert"></div>
-        <div class="alert"></div>
-        <div class="alert"></div>
-        <div class="alert"></div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert"></div>
-        <div class="alert col2"></div>
-        <div class="alert"></div>
+        <div class="alert">div</div>
+        <div class="alert col2">col2</div>
+        <div class="alert">div</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert"></div>
-        <div class="alert col3"></div>
+        <div class="alert">div</div>
+        <div class="alert col3">col3</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert"></div>
-        <div class="alert col2 empty-col1-left"></div>
+        <div class="alert">div</div>
+        <div class="alert col2 empty-col1-left">col2, empty-col1-left</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert"></div>
-        <div class="alert empty-col2-left"></div>
+        <div class="alert">div</div>
+        <div class="alert empty-col2-left">empty-col2-left</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert empty-col3-left"></div>
+        <div class="alert empty-col3-left">empty-col3-left</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert col3 empty-col1-right"></div>
+        <div class="alert col3 empty-col1-right">col3, empty-col1-right</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert"></div>
-        <div class="alert empty-col2-right"></div>
+        <div class="alert">div</div>
+        <div class="alert empty-col2-right">empty-col2-right</div>
       </div>
       <div class="grid-row grid4">
-        <div class="alert empty-col1-left empty-col1-right"></div>
-        <div class="alert"></div>
-      </div>
-      <div class="grid-row grid4">
-        <div class="alert empty-col3-right"></div>
+        <div class="alert empty-col3-right">empty-col3-right</div>
       </div>
 
     </div>

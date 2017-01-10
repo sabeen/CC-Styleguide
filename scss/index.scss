@@ -12,3 +12,67 @@
 @import "forms";
 
 @import "calls-list";
+
+
+/* STYLES FOR STYLEGUIDE */
+
+.font-color {
+	background: $font-color;
+  color: white;
+}
+.action-color {
+  background: $action-color;
+  color: white;
+}
+.action-hover {
+  background: $action-hover;
+  color: white;
+}
+.bg-color {
+  background: $bg-color;
+}
+.input-color {
+  background: $input-color;
+}
+.dark-grey {
+  background: $dark-grey;
+  color: white;
+}
+.grey {
+  background: $grey;
+  color: white;
+}
+.mid-grey {
+  background: $mid-grey;
+  color: white;
+}
+.light-grey {
+  background: $light-grey;
+  color: white;
+}
+.calls-color {
+  background: $calls-color;
+  color: white;
+}
+.patients-color {
+  background: $patients-color;
+  color: white;
+}
+.danger {
+  background: $danger;
+  color: white;
+}
+.warning {
+  background: $warning;
+  color: white;
+}
+.success {
+  background: $success;
+  color: white;
+}
+.info {
+  background: $info;
+  color: white;
+}
+
+

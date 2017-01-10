@@ -45,6 +45,14 @@ h4 {
 p {
   padding: 10px 0; }
 
+.container {
+  padding: 20px; }
+
+.section {
+  padding: 20px 0 40px; }
+  .section:not(:first-child) {
+    border-top: 1px solid #CED7D8; }
+
 .grid-row, .form-row {
   display: flex;
   justify-content: space-between;
@@ -98,14 +106,6 @@ p {
     margin-right: 52%; }
 .grid4 > div.empty-col3-right {
   margin-right: 78%; }
-
-.container {
-  padding: 20px; }
-
-.section {
-  padding: 20px 0 40px; }
-  .section:not(:first-child) {
-    border-top: 1px solid #CED7D8; }
 
 .btn, .btn-lg {
   border: none;
@@ -678,5 +678,64 @@ input[type="radio"]:checked + label {
   transform: rotate(45deg);
   margin-right: 8px;
   margin-bottom: 1px; }
+
+/* STYLES FOR STYLEGUIDE */
+.font-color {
+  background: #2B4643;
+  color: white; }
+
+.action-color {
+  background: #00A777;
+  color: white; }
+
+.action-hover {
+  background: #00c189;
+  color: white; }
+
+.bg-color {
+  background: #F1F5F4; }
+
+.input-color {
+  background: #F0FAFE; }
+
+.dark-grey {
+  background: #2B4643;
+  color: white; }
+
+.grey {
+  background: #607981;
+  color: white; }
+
+.mid-grey {
+  background: #96aab1;
+  color: white; }
+
+.light-grey {
+  background: #CED7D8;
+  color: white; }
+
+.calls-color {
+  background: #4F85A3;
+  color: white; }
+
+.patients-color {
+  background: #70898D;
+  color: white; }
+
+.danger {
+  background: #C74B1E;
+  color: white; }
+
+.warning {
+  background: #F19627;
+  color: white; }
+
+.success {
+  background: #00A777;
+  color: white; }
+
+.info {
+  background: #96aab1;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */
