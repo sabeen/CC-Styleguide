@@ -9,51 +9,55 @@
   background: $action-color;
   box-shadow: 1px 1px 2px rgba($font-color, 0.8), 1px 1px 0px rgba(white, 0.3) inset;
   border-radius: 4px;
+
   &:hover, &:focus, &:active {
     background: $action-hover;
   }
+
+  &.inactive {
+    opacity: 0.5;
+    background: $mid-grey;
+    cursor: default;
+  }
 }
 
-.btn-lg {
-  @extend .btn;
+.btn--lg {
   font-size: 1.2em;
   padding: $padding-unit/1.5 $padding-unit;
   box-shadow: 2px 2px 3px rgba($font-color, 0.8), 1px 1px 0px rgba(white, 0.3) inset;
 }
 
-.btn-minimal {
-  background: none;
-  color: $action-color;
-  &:hover, &:focus, &:active {
-    color: $action-hover;
-    background: none;
-  }
-}
-
-.btn-secondary {
+.btn--secondary {
   background: $mid-grey;
+
   &:hover, &:focus, &:active {
     background: lighten($mid-grey, 5%);
   }
 }
 
-.btn-minimal, .flat {
+.btn--minimal {
+  background: none;
+  color: $action-color;
+  box-shadow: none;
+
+  &:hover, &:focus, &:active {
+    color: $action-hover;
+    background: none;
+  }
+
+  &.inactive {
+    opacity: 0.5;
+    color: $mid-grey;
+    background: none;
+  }
+}
+
+.btn--flat {
   box-shadow: none;
 }
 
-.btn.inactive {
-  opacity: 0.5;
-  background: $mid-grey;
-  cursor: default;
-}
+.btn--icon-right {
 
-.btn-minimal.inactive {
-  opacity: 0.5;
-  color: $mid-grey;
-  background: none;
-}
-
-.btn.icon-right {
   i {
     margin-left: $padding-unit;
     margin-right: $padding-unit*-0.4;

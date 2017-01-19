@@ -13,34 +13,34 @@
   <body role="document">
 
     <nav class="navbar" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">
-            <span>Call Center Styleguide</span>
-          </a>
-        </div>
-        <div id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="components.html">Components</a></li>
-            <li class=""><a href="list.html">List Layout</a></li>
+      <div class="navbar__header">
+        <a class="navbar__brand" href="/">
+          <span>Call Center Styleguide</span>
+        </a>
+      </div>
+      <div id="navbar">
+        <ul class="nav navbar__nav">
+          <li class="active"><a href="components.html">Components</a></li>
+          <li class=""><a href="list.html">List Layout</a></li>
+        </ul>
+      </div>
+      <div class="navbar__user">
+        <div class="navbar__dropdown dropdown">
+          <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <div class="user-icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+            Username<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
           </ul>
         </div>
-        <div class="navbar-user">
-            <div class="dropdown">
-              <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                <div class="user-icon">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-               </div>
-                Username<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
-              </ul>
-            </div>
       </div>
     </nav>
 
     <div class="container" role="main">
       <div class="section">
-        <label class="section-label">Typography</label>
+        <label>Typography</label>
         <h1>Font</h1>
         <p>Asap (400), <strong>Asap bold (700)</strong>, <em>Asap italic (400i)</em></p>
         <h1>Headline H1</h1>
@@ -52,7 +52,7 @@
         <a href="#">This is a textlink</a>
       </div>
       <div class="section">
-        <label class="section-label">Colors</label>
+        <label>Colors</label>
         <h1>Basic</h1>
         <div class="grid-row">
           <div class="container font-color">Font</div>
@@ -84,38 +84,38 @@
 
 
     <div class="section">
-      <label class="section-label">Navigational Elements</label>
+      <label>Navigational Elements</label>
       <h1>Buttons</h1>
 
       <p>
         <button type="button" class="btn">Default</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-minimal">Minimalist</button>
+        <button type="button" class="btn btn--secondary">Secondary</button>
+        <button type="button" class="btn btn--minimal">Minimalist</button>
       </p>
       <p>
-        <button type="button" class="btn flat">Default</button>
-        <button type="button" class="btn btn-secondary flat">Secondary</button>
+        <button type="button" class="btn btn--flat">Default</button>
+        <button type="button" class="btn btn--secondary btn--flat">Secondary</button>
       </p>
       <p>
-        <button type="button" class="btn-lg">Large Button</button>
-        <button type="button" class="btn-lg btn-secondary">Secondary</button>
-        <button type="button" class="btn-lg btn-minimal">Minimalist</button>
+        <button type="button" class="btn btn--lg">Large Button</button>
+        <button type="button" class="btn btn--lg btn--secondary">Secondary</button>
+        <button type="button" class="btn btn--lg btn--minimal">Minimalist</button>
       </p>
       <p>
         <button type="button" class="btn inactive">Default</button>
-        <button type="button" class="btn btn-secondary inactive">Secondary</button>
-        <button type="button" class="btn btn-minimal inactive">Minimalist</button>
+        <button type="button" class="btn btn--secondary inactive">Secondary</button>
+        <button type="button" class="btn btn--minimal inactive">Minimalist</button>
       </p>
 
       <p>
         <button type="button" class="btn"><i class="fa fa-user" aria-hidden="true"></i> Default</button>
-        <button type="button" class="btn btn-secondary"><i class="fa fa-user" aria-hidden="true"></i> Secondary</button>
-        <button type="button" class="btn btn-minimal"><i class="fa fa-user" aria-hidden="true"></i> Minimalist</button>
+        <button type="button" class="btn btn--secondary"><i class="fa fa-user" aria-hidden="true"></i> Secondary</button>
+        <button type="button" class="btn btn--minimal"><i class="fa fa-user" aria-hidden="true"></i> Minimalist</button>
       </p>
       <p>
-        <button type="button" class="btn icon-right">Default <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
-        <button type="button" class="btn btn-secondary icon-right">Secondary <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
-        <button type="button" class="btn btn-minimal icon-right">Minimalist  <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn--icon-right">Default <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn--secondary btn--icon-right">Secondary <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn--minimal btn--icon-right">Minimalist  <i class="fa fa-lg fa-angle-right" aria-hidden="true"></i></button>
       </p>
 
 
@@ -159,19 +159,19 @@
       <h1>Nav bar</h1>
 
       <nav class="navbar" role="navigation">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/">
+          <div class="navbar__header">
+            <a class="navbar__brand" href="/">
               <span>Call Center Operations SL</span>
             </a>
           </div>
           <div id="navbar">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar__nav">
               <li class="calls active"><a href="/#">Calls</a></li>
               <li class="patients"><a href="#">Patient files</a></li>
             </ul>
           </div>
-          <div class="navbar-user">
-              <div class="dropdown">
+          <div class="navbar__user">
+              <div class="navbar__dropdown dropdown">
                 <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                   <div class="user-icon">
                     <i class="fa fa-user" aria-hidden="true"></i>

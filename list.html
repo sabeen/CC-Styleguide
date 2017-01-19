@@ -13,32 +13,33 @@
   <body role="document">
 
     <nav class="navbar" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">
-            <span>Call Center Styleguide</span>
+      <div class="navbar__header">
+        <a class="navbar__brand" href="/">
+          <span>Call Center Styleguide</span>
+        </a>
+      </div>
+      <div id="navbar">
+        <ul class="nav navbar__nav">
+          <li class=""><a href="components.html">Components</a></li>
+          <li class="active"><a href="list.html">List Layout</a></li>
+        </ul>
+      </div>
+      <div class="navbar__user">
+        <div class="navbar__dropdown dropdown">
+          <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            <div class="user-icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+           </div>
+            Username<span class="caret"></span>
           </a>
-        </div>
-        <div id="navbar">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="components.html">Components</a></li>
-            <li class="active"><a href="list.html">List Layout</a></li>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
           </ul>
         </div>
-        <div class="navbar-user">
-            <div class="dropdown">
-              <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                <div class="user-icon">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-               </div>
-                Username<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
-              </ul>
-            </div>
       </div>
     </nav>
 
-    <div class="container calls-list--header" role="main">
+    <div class="container calls-list__header" role="main">
 
       <button type="button" class="new-call-button btn">
         <i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-plus" aria-hidden="true"></i>
@@ -98,7 +99,7 @@
 
     </div> <!-- /container -->
 
-    <div class="calls-list--list">
+    <div class="calls-list__list">
       <table class="table-list">
         <thead>
           <tr>

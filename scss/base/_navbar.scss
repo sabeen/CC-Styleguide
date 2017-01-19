@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.navbar-brand {
+.navbar__brand {
   display: inline-block;
   height: 54px;
   color: $light-grey;
@@ -16,7 +16,7 @@
   padding: $padding-unit/1.2 $padding-unit*2 $padding-unit/1.2 $padding-unit;
 }
 
-.navbar-nav {
+.navbar__nav {
   display: flex;
   li {
     height: 54px;
@@ -65,7 +65,7 @@
   }
 }
 
-.navbar-user {
+.navbar__user {
   margin-left: auto;
   display: flex;
 }
@@ -83,7 +83,7 @@
   }
 }
 
-.navbar .dropdown {
+.navbar__dropdown {
   margin: 0;
   .dropdown-toggle {
     height: 54px;

@@ -107,7 +107,7 @@ p {
 .grid4 > div.empty-col3-right {
   margin-right: 78%; }
 
-.btn, .btn-lg {
+.btn {
   border: none;
   color: white;
   font-size: 1em;
@@ -118,40 +118,39 @@ p {
   background: #00A777;
   box-shadow: 1px 1px 2px rgba(43, 70, 67, 0.8), 1px 1px 0px rgba(255, 255, 255, 0.3) inset;
   border-radius: 4px; }
-  .btn:hover, .btn-lg:hover, .btn:focus, .btn-lg:focus, .btn:active, .btn-lg:active {
+  .btn:hover, .btn:focus, .btn:active {
     background: #00c189; }
+  .btn.inactive {
+    opacity: 0.5;
+    background: #96aab1;
+    cursor: default; }
 
-.btn-lg {
+.btn--lg {
   font-size: 1.2em;
   padding: 13.33333px 20px;
   box-shadow: 2px 2px 3px rgba(43, 70, 67, 0.8), 1px 1px 0px rgba(255, 255, 255, 0.3) inset; }
 
-.btn-minimal {
-  background: none;
-  color: #00A777; }
-  .btn-minimal:hover, .btn-minimal:focus, .btn-minimal:active {
-    color: #00c189;
-    background: none; }
-
-.btn-secondary {
+.btn--secondary {
   background: #96aab1; }
-  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active {
     background: #a5b6bc; }
 
-.btn-minimal, .flat {
+.btn--minimal {
+  background: none;
+  color: #00A777;
+  box-shadow: none; }
+  .btn--minimal:hover, .btn--minimal:focus, .btn--minimal:active {
+    color: #00c189;
+    background: none; }
+  .btn--minimal.inactive {
+    opacity: 0.5;
+    color: #96aab1;
+    background: none; }
+
+.btn--flat {
   box-shadow: none; }
 
-.btn.inactive, .inactive.btn-lg {
-  opacity: 0.5;
-  background: #96aab1;
-  cursor: default; }
-
-.btn-minimal.inactive {
-  opacity: 0.5;
-  color: #96aab1;
-  background: none; }
-
-.btn.icon-right i, .icon-right.btn-lg i {
+.btn--icon-right i {
   margin-left: 20px;
   margin-right: -8px; }
 
@@ -257,7 +256,7 @@ p {
     border-top: 7px solid;
     border-right: 6px solid transparent;
     border-left: 6px solid transparent; }
-  .dropdown-toggle.btn:hover, .dropdown-toggle.btn-lg:hover, .dropdown-toggle.btn:focus, .dropdown-toggle.btn-lg:focus, .dropdown-toggle.btn:active, .dropdown-toggle.btn-lg:active {
+  .dropdown-toggle.btn:hover, .dropdown-toggle.btn:focus, .dropdown-toggle.btn:active {
     color: white; }
 
 @keyframes dropdown {
@@ -351,7 +350,7 @@ p {
   justify-content: space-between;
   position: relative; }
 
-.navbar-brand {
+.navbar__brand {
   display: inline-block;
   height: 54px;
   color: #CED7D8;
@@ -359,28 +358,28 @@ p {
   text-transform: uppercase;
   padding: 16.66667px 40px 16.66667px 20px; }
 
-.navbar-nav {
+.navbar__nav {
   display: flex; }
-  .navbar-nav li {
+  .navbar__nav li {
     height: 54px;
     list-style: none; }
-  .navbar-nav a {
+  .navbar__nav a {
     display: inline-block;
     color: #CED7D8;
     text-transform: uppercase;
     height: 54px;
     padding: 16.66667px 30px; }
-  .navbar-nav li.active a,
-  .navbar-nav li:hover a {
+  .navbar__nav li.active a,
+  .navbar__nav li:hover a {
     color: white;
     font-weight: 700; }
-  .navbar-nav li.active a {
+  .navbar__nav li.active a {
     background: #607981; }
-  .navbar-nav .calls.active a {
+  .navbar__nav .calls.active a {
     background: #4F85A3; }
-  .navbar-nav .patients.active a {
+  .navbar__nav .patients.active a {
     background: #70898D; }
-  .navbar-nav .active:before {
+  .navbar__nav .active:before {
     content: "";
     display: block;
     height: 6px;
@@ -389,12 +388,12 @@ p {
     left: 0px;
     top: 48px;
     background: #607981; }
-  .navbar-nav .calls.active:before {
+  .navbar__nav .calls.active:before {
     background: #4F85A3; }
-  .navbar-nav .patients.active:before {
+  .navbar__nav .patients.active:before {
     background: #70898D; }
 
-.navbar-user {
+.navbar__user {
   margin-left: auto;
   display: flex; }
 
@@ -409,13 +408,13 @@ p {
   .user-icon i {
     color: #2B4643; }
 
-.navbar .dropdown {
+.navbar__dropdown {
   margin: 0; }
-  .navbar .dropdown .dropdown-toggle {
+  .navbar__dropdown .dropdown-toggle {
     height: 54px;
     padding-top: 16.66667px;
     color: #CED7D8; }
-  .navbar .dropdown .dropdown-menu {
+  .navbar__dropdown .dropdown-menu {
     min-width: 0; }
 
 .toolbar {
@@ -645,30 +644,30 @@ input[type="radio"]:checked + label {
       width: 100%;
       padding: 0; }
 
-.calls-list--header {
+.calls-list__header {
   background: rgba(91, 130, 151, 0.6);
   padding-bottom: 40px; }
-  .calls-list--header .new-call-button {
+  .calls-list__header .new-call-button {
     height: 53.33333px;
     margin: 0;
     width: 60px;
     float: left;
     padding-left: 15px; }
-    .calls-list--header .new-call-button .fa-phone {
+    .calls-list__header .new-call-button .fa-phone {
       font-size: 2.2em;
       line-height: 1.3em; }
-    .calls-list--header .new-call-button .fa-plus {
+    .calls-list__header .new-call-button .fa-plus {
       font-size: 1.2em;
       position: relative;
       bottom: 15px;
       right: 5px; }
-  .calls-list--header .toolbar {
+  .calls-list__header .toolbar {
     margin-left: 80px; }
 
-.calls-list--list i {
+.calls-list__list i {
   font-size: 0.9em;
   margin-right: 5px; }
-.calls-list--list .patient a:before {
+.calls-list__list .patient a:before {
   content: "";
   display: inline-block;
   width: 6px;

@@ -1,15 +1,15 @@
-@import "settings";
-@import "global";
-@import "layout";
-@import "buttons";
-@import "labels";
-@import "alerts";
-@import "dropdowns";
-@import "pagination";
-@import "tables";
-@import "navbar";
-@import "toolbar";
-@import "forms";
+@import "base/settings";
+@import "base/global";
+@import "base/layout";
+@import "base/buttons";
+@import "base/labels";
+@import "base/alerts";
+@import "base/dropdowns";
+@import "base/pagination";
+@import "base/tables";
+@import "base/navbar";
+@import "base/toolbar";
+@import "base/forms";
 
 @import "calls-list";
 
